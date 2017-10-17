@@ -15,7 +15,7 @@ ext {
             publishVersion: "${verMajor}.${verMinor}.${verPatch}",
             repoName      : 'maven',
             groupId       : 'com.rafakob.android',
-            desc          : 'Personal Android utility classes',
+            desc          : 'Personal Android utilities',
             website       : 'https://github.com/rafakob/Android',
             repository    : 'https://github.com/rafakob/Android',
             licences      : ['Apache-2.0'],

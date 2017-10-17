@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion compileSdk
@@ -21,6 +22,9 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -29,4 +33,20 @@ dependencies {
     api "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY"
     api "io.reactivex.rxjava2:rxjava:$RXJAVA"
     api "io.reactivex.rxjava2:rxandroid:$RXANDROID"
+}
+
+publish {
+    artifactId = 'kotlin-extensions'
+    uploadName = 'kotlin-extensions'
+
+    publishVersion = bintray.publishVersion
+    repoName = bintray.repoName
+    groupId = bintray.groupId
+    desc = bintray.desc
+    website = bintray.website
+    repository = bintray.repository
+    licences = bintray.licences
+    dryRun = bintray.dryRun
+    bintrayUser = bintray.user
+    bintrayKey = bintray.key
 }
