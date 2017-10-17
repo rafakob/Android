@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ErrorState">
+        <attr name="errorMessage" format="string" />
+        <attr name="errorMessageColor" format="color" />
+        <attr name="errorAction" format="string" />
+        <attr name="errorIcon" format="reference" />
+        <attr name="errorIconTint" format="color" />
+    </declare-styleable>
+</resources>

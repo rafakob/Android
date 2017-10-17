@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/emptyStateIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Error icon"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/emptyStateMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="16sp"
+        tools:text="This is state message" />
+
+    <Button
+        android:id="@+id/emptyStateAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:textColor="?colorAccent"
+        android:visibility="gone"
+        tools:text="Try again"
+        tools:visibility="visible" />
+</merge>

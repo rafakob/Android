@@ -23,6 +23,8 @@ android {
 dependencies {
     implementation project(':kotlin-extensions')
     implementation project(':view-floatingedittext')
+    implementation project(':view-emptystate')
+    implementation project(':view-errorstate')
 
     implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY"
     implementation "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY"

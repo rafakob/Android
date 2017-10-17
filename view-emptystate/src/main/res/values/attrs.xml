@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmptyState">
+        <attr name="emptyMessage" format="string" />
+        <attr name="emptyMessageColor" format="color" />
+        <attr name="emptyAction" format="string" />
+        <attr name="emptyIcon" format="reference" />
+        <attr name="emptyIconTint" format="color" />
+    </declare-styleable>
+</resources>
