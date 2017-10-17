@@ -1,0 +1,26 @@
+ext {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+    minSdk = 19
+    targetSdk = 26
+    compileSdk = 26
+    buildTools = '26.0.2'
+
+    verMajor = 1
+    verMinor = 0
+    verPatch = 0
+
+    bintray = [
+            publishVersion: "${verMajor}.${verMinor}.${verPatch}",
+            repoName      : 'maven',
+            groupId       : 'com.rafakob.android',
+            desc          : 'Personal Android utility classes',
+            website       : 'https://github.com/rafakob/Android',
+            repository    : 'https://github.com/rafakob/Android',
+            licences      : ['Apache-2.0'],
+            dryRun        : false,
+            user          : properties.getProperty('bintray.user'),
+            key           : properties.getProperty('bintray.key')
+    ]
+}

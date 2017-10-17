@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode verMajor * 100000 + verMinor * 100 + verPatch
+        versionName "${verMajor}.${verMinor}.${verPatch}"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+    api "com.android.support:appcompat-v7:$SUPPORT_LIBRARY"
+    api "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY"
+    api "io.reactivex.rxjava2:rxjava:$RXJAVA"
+    api "io.reactivex.rxjava2:rxandroid:$RXANDROID"
+}
