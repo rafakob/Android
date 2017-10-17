@@ -28,15 +28,12 @@ android {
 
 dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
-    api "com.android.support:appcompat-v7:$SUPPORT_LIBRARY"
-    api "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY"
-    api "io.reactivex.rxjava2:rxjava:$RXJAVA"
-    api "io.reactivex.rxjava2:rxandroid:$RXANDROID"
+    api "com.android.support:design:$SUPPORT_LIBRARY"
 }
 
 publish {
-    artifactId = 'kotlin-extensions'
-    uploadName = 'kotlin-extensions'
+    artifactId = 'view-floatingedittext'
+    uploadName = 'view-floatingedittext'
 
     publishVersion = bintray.publishVersion
     repoName = bintray.repoName

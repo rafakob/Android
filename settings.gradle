@@ -1,1 +1,1 @@
-include ':app', ':kotlin-extensions'
+include ':app', ':kotlin-extensions', ':view-floatingedittext'
