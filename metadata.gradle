@@ -7,8 +7,8 @@ ext {
     compileSdk = 28
 
     verMajor = 1
-    verMinor = 1
-    verPatch = 1
+    verMinor = 2
+    verPatch = 0
 
     meta = [
             publishVersion: "${verMajor}.${verMinor}.${verPatch}",
@@ -18,7 +18,7 @@ ext {
             website       : 'https://github.com/rafakob/Android',
             repository    : 'https://github.com/rafakob/Android',
             licences      : ['Apache-2.0'],
-            dryRun        : true,
+            dryRun        : false,
             userOrg       : properties.getProperty('bintray.user'),
             user          : properties.getProperty('bintray.user'),
             key           : properties.getProperty('bintray.key')
