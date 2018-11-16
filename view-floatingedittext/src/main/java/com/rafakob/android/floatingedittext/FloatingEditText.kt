@@ -2,8 +2,8 @@ package com.rafakob.android.floatingedittext
 
 import android.content.Context
 import android.graphics.Typeface
-import android.support.design.widget.TextInputEditText
-import android.support.design.widget.TextInputLayout
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import android.text.InputFilter
 import android.util.AttributeSet
 import android.util.TypedValue

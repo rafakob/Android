@@ -1,7 +1,7 @@
 package com.rafakob.android.kotlinextensions
 
 import android.graphics.PorterDuff
-import android.support.annotation.ColorInt
+import androidx.annotation.ColorInt
 import android.view.Menu
 
 fun Menu.tintIcons(@ColorInt color: Int) {

@@ -1,26 +1,26 @@
 package com.rafakob.android.kotlinextensions
 
-import android.support.v7.widget.*
+import androidx.appcompat.widget.*
 
-fun RecyclerView.init(adapter: RecyclerView.Adapter<*>,
-                      animator: SimpleItemAnimator? = DefaultItemAnimator(),
-                      manager: RecyclerView.LayoutManager = LinearLayoutManager(context)) {
+fun androidx.recyclerview.widget.RecyclerView.init(adapter: androidx.recyclerview.widget.RecyclerView.Adapter<*>,
+                                                   animator: androidx.recyclerview.widget.SimpleItemAnimator? = androidx.recyclerview.widget.DefaultItemAnimator(),
+                                                   manager: androidx.recyclerview.widget.RecyclerView.LayoutManager = androidx.recyclerview.widget.LinearLayoutManager(context)) {
 
     init(adapter, animator, manager, null)
 }
 
-fun RecyclerView.init(adapter: RecyclerView.Adapter<*>,
-                      animator: SimpleItemAnimator? = DefaultItemAnimator(),
-                      divider: Int,
-                      manager: RecyclerView.LayoutManager = LinearLayoutManager(context)) {
+fun androidx.recyclerview.widget.RecyclerView.init(adapter: androidx.recyclerview.widget.RecyclerView.Adapter<*>,
+                                                   animator: androidx.recyclerview.widget.SimpleItemAnimator? = androidx.recyclerview.widget.DefaultItemAnimator(),
+                                                   divider: Int,
+                                                   manager: androidx.recyclerview.widget.RecyclerView.LayoutManager = androidx.recyclerview.widget.LinearLayoutManager(context)) {
 
-    init(adapter, animator, manager, DividerItemDecoration(context, divider))
+    init(adapter, animator, manager, androidx.recyclerview.widget.DividerItemDecoration(context, divider))
 }
 
-fun RecyclerView.init(adapter: RecyclerView.Adapter<*>,
-                      animator: SimpleItemAnimator? = DefaultItemAnimator(),
-                      manager: RecyclerView.LayoutManager = LinearLayoutManager(context),
-                      vararg decorators: RecyclerView.ItemDecoration?) {
+fun androidx.recyclerview.widget.RecyclerView.init(adapter: androidx.recyclerview.widget.RecyclerView.Adapter<*>,
+                                                   animator: androidx.recyclerview.widget.SimpleItemAnimator? = androidx.recyclerview.widget.DefaultItemAnimator(),
+                                                   manager: androidx.recyclerview.widget.RecyclerView.LayoutManager = androidx.recyclerview.widget.LinearLayoutManager(context),
+                                                   vararg decorators: androidx.recyclerview.widget.RecyclerView.ItemDecoration?) {
 
     this.layoutManager = manager
     this.itemAnimator = animator

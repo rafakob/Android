@@ -24,9 +24,9 @@ android {
 }
 
 dependencies {
-    api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
-    api "com.android.support:appcompat-v7:27.0.1"
-    api "com.android.support:recyclerview-v7:27.0.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
     implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 }

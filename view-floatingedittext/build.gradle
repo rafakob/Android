@@ -24,8 +24,8 @@ android {
 }
 
 dependencies {
-    api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
-    api "com.android.support:design:27.0.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+    implementation "com.google.android.material:material:1.0.0"
 }
 
 publish {

@@ -3,8 +3,8 @@ package com.rafakob.android.errorstate
 import android.content.Context
 import android.graphics.PorterDuff
 import android.graphics.drawable.Drawable
-import android.support.annotation.DrawableRes
-import android.support.annotation.StringRes
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View

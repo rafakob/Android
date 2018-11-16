@@ -3,9 +3,9 @@ package com.rafakob.android.kotlinextensions
 import android.content.Context
 import android.content.ContextWrapper
 import android.os.Build
-import android.support.annotation.*
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
+import androidx.annotation.*
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import android.util.TypedValue
 import android.view.View
 import android.view.animation.Animation

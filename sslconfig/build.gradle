@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
 }
 
 publish {

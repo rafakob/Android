@@ -24,8 +24,8 @@ android {
 }
 
 dependencies {
-    api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
-    api "com.android.support:appcompat-v7:27.0.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 }
 
 publish {
