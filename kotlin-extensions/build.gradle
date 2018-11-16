@@ -4,9 +4,6 @@ apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion compileSdk
-    buildToolsVersion buildTools
-
-
     defaultConfig {
         minSdkVersion minSdk
         targetSdkVersion targetSdk
@@ -28,10 +25,10 @@ android {
 
 dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN"
-    api "com.android.support:appcompat-v7:$SUPPORT_LIBRARY"
-    api "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY"
-    api "io.reactivex.rxjava2:rxjava:$RXJAVA"
-    api "io.reactivex.rxjava2:rxandroid:$RXANDROID"
+    api "com.android.support:appcompat-v7:27.0.1"
+    api "com.android.support:recyclerview-v7:27.0.1"
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 }
 
 publish {

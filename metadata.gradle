@@ -3,9 +3,8 @@ ext {
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
     minSdk = 19
-    targetSdk = 26
-    compileSdk = 26
-    buildTools = '27.0.0'
+    targetSdk = 28
+    compileSdk = 28
 
     verMajor = 1
     verMinor = 1
