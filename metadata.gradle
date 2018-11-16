@@ -10,7 +10,7 @@ ext {
     verMinor = 1
     verPatch = 1
 
-    bintray = [
+    meta = [
             publishVersion: "${verMajor}.${verMinor}.${verPatch}",
             repoName      : 'maven',
             groupId       : 'com.rafakob.android',
@@ -18,7 +18,8 @@ ext {
             website       : 'https://github.com/rafakob/Android',
             repository    : 'https://github.com/rafakob/Android',
             licences      : ['Apache-2.0'],
-            dryRun        : false,
+            dryRun        : true,
+            userOrg       : properties.getProperty('bintray.user'),
             user          : properties.getProperty('bintray.user'),
             key           : properties.getProperty('bintray.key')
     ]

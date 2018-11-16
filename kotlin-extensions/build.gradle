@@ -1,6 +1,6 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion compileSdk
@@ -35,14 +35,15 @@ publish {
     artifactId = 'kotlin-extensions'
     uploadName = 'kotlin-extensions'
 
-    publishVersion = bintray.publishVersion
-    repoName = bintray.repoName
-    groupId = bintray.groupId
-    desc = bintray.desc
-    website = bintray.website
-    repository = bintray.repository
-    licences = bintray.licences
-    dryRun = bintray.dryRun
-    bintrayUser = bintray.user
-    bintrayKey = bintray.key
+    publishVersion = meta.publishVersion
+    repoName = meta.repoName
+    groupId = meta.groupId
+    desc = meta.desc
+    website = meta.website
+    repository = meta.repository
+    licences = meta.licences
+    dryRun = meta.dryRun
+    userOrg = meta.user
+    bintrayUser = meta.user
+    bintrayKey = meta.key
 }
